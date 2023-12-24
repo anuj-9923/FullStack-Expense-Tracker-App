@@ -39,7 +39,6 @@ async function saveData(event) {
 	event.target.Desc.value = '';
 	event.target.Price.value = '';
 }
-
 // function to display data on screen
 async function display(expenseData) {
 	const { Name, Desc, Price } = expenseData;
