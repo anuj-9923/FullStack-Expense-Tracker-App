@@ -66,7 +66,6 @@ async function display(expenseData) {
 		}
 		itemList.removeChild(li);
 	};
-
 	// EDIT BUTTON
 	const editButton = document.createElement('input');
 	editButton.type = 'button';
@@ -80,15 +79,12 @@ async function display(expenseData) {
 		document.querySelector('#Desc').value = Desc;
 		document.querySelector('#Price').value = Price;
 	};
-
-
 	// appending the child element
 	li.appendChild(deleteButton);
 	li.appendChild(editButton);
 	itemList.appendChild(li);
 
 }
-
 window.addEventListener('DOMContentLoaded', async () => {
 	try {
 		let res = await axios.get('http://localhost:4000/add-expense')

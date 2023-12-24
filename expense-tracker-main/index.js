@@ -11,13 +11,12 @@ addItem.addEventListener('click', display);
 
 // function to display data on screen
 function display() {
-
 	const ItemName = amount.value;
 	const itemDesc = desc.value;
 	const itemPrice = category.value;
 	const itemData = {
-		ItemName ,
-		itemDesc ,
+		ItemName,
+		itemDesc,
 		itemPrice
 	}
 	if (ItemName === '' || itemDesc === '' || itemPrice === '') {
@@ -57,9 +56,9 @@ function display() {
 		editButton.onclick = () => {
 			localStorage.removeItem(itemData.itemPrice);
 			itemList.removeChild(li);
-			document.querySelector('#amount').value = itemData.ItemName ;
- 			document.querySelector('#desc').value = itemData.itemDesc ;
-			document.querySelector('#category').value = itemData.itemPrice ;
+			document.querySelector('#amount').value = itemData.ItemName;
+			document.querySelector('#desc').value = itemData.itemDesc;
+			document.querySelector('#category').value = itemData.itemPrice;
 		};
 
 
