@@ -26,7 +26,7 @@ async function saveData(event) {
 				display(res.data);
 			})
 			.catch((err) => console.log(err));
-			expenseData.id = '';
+		expenseData.id = '';
 	} else {
 		try {
 			let res = await axios.post('http://localhost:4000/add-expense', expenseData);
@@ -35,9 +35,9 @@ async function saveData(event) {
 			console.log(err);
 		}
 	}
-	event.target.Name.value = '';
-	event.target.Desc.value = '';
-	event.target.Price.value = '';
+	// event.target.Name.value = '';
+	// event.target.Desc.value = '';
+	// event.target.Price.value = '';
 }
 
 // function to display data on screen
