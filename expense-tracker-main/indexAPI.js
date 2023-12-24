@@ -35,9 +35,9 @@ async function saveData(event) {
 			console.log(err);
 		}
 	}
-	// event.target.Name.value = '';
-	// event.target.Desc.value = '';
-	// event.target.Price.value = '';
+	event.target.Name.value = '';
+	event.target.Desc.value = '';
+	event.target.Price.value = '';
 }
 
 // function to display data on screen
